@@ -1,7 +1,5 @@
 {
   "type": "mongodb",
-  "host": "localhost",
-  "port": 27017,
   "database": "svelteFacts",
   "synchronize": false,
   "migrationsRun": true,

@@ -11,7 +11,8 @@
     "typeorm": "ts-node ./node_modules/typeorm/cli.js",
     "createMigration": "ts-node ./node_modules/typeorm/cli.js migrations:create",
     "migrate": "ts-node ./node_modules/typeorm/cli.js migrations:generate",
-    "now-dev": "npm run dev"
+    "now-dev": "npm run dev",
+    "now-build": "npm run build"
   },
   "author": "",
   "license": "ISC",
