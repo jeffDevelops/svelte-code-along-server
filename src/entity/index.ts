@@ -2,6 +2,7 @@ import { createConnection, Connection } from "typeorm";
 import { config as dotenv } from "dotenv";
 
 console.log(process.env.SVELTEFACTS_CONNECTION_STRING!);
+console.log(__dirname + "/../entity/*.ts");
 
 const connection: Promise<Connection> = createConnection({
   type: "mongodb",

@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "builds": [{ "src": "public/index.js", "use": "@now/node-server" }],
-  "routes": [{ "src": "/(.*)", "dest": "public/index.js" }],
+  "builds": [{ "src": "src/index.ts", "use": "@now/node-server@canary" }],
+  "routes": [{ "src": "/(.*)", "dest": "src/index.ts" }],
   "build": {
     "env": {
       "SVELTEFACTS_CONNECTION_STRING": "@sveltefacts-connection-string"
     }
+  },
+  "env": {
+    "SVELTEFACTS_CONNECTION_STRING": "@sveltefacts-connection-string"
   }
 }
