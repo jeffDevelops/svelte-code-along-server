@@ -10,12 +10,14 @@
     "start": "npm run build && node build/index.js",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js",
     "createMigration": "ts-node ./node_modules/typeorm/cli.js migrations:create",
-    "migrate": "ts-node ./node_modules/typeorm/cli.js migrations:generate"
+    "migrate": "ts-node ./node_modules/typeorm/cli.js migrations:generate",
+    "now-dev": "npm run dev"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.9.16",
+    "dotenv": "^8.2.0",
     "graphql": "^14.5.8",
     "mongodb": "^3.5.2",
     "rimraf": "^3.0.0",

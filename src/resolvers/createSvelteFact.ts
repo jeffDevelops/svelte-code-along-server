@@ -1,4 +1,3 @@
-import { ObjectId } from "mongodb";
 import { SvelteFact } from "../entity/SvelteFact";
 import { connection } from "../entity";
 
