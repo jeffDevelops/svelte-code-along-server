@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
     "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/index.js"
+    "start": "npm run build && node build/index.js",
+    "typeorm": "ts-node ./node_modules/typeorm/cli.js",
+    "createMigration": "ts-node ./node_modules/typeorm/cli.js migrations:create",
+    "migrate": "ts-node ./node_modules/typeorm/cli.js migrations:generate"
   },
   "author": "",
   "license": "ISC",
